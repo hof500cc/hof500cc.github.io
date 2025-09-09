@@ -51,10 +51,9 @@ layout: default
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
-<hr />
-      <div style='background-color:#FFFFDD'>
+      <span style='color:#00AA00'>
         전기차 충전뉴스 텔레그램 채널 구독하기 <a href="https://t.me/chargingrate" target="_blank">https://t.me/chargingrate</a>
-      </div>
+      </span>
       <footer class="page__meta">
         {% if site.data.ui-text[site.locale].meta_label %}
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
