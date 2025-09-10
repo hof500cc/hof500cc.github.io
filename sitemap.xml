@@ -13,13 +13,5 @@ permalink: /sitemap.xml
   </url>
   {% endfor %}
 
-  {% for page in site.pages %}
-    {% if page.sitemap != false and page.url != "/sitemap.xml" %}
-    <url>
-      <loc>{{ site.url }}{{ page.url }}</loc>
-      <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
-      <priority>0.5</priority>
-    </url>
-    {% endif %}
-  {% endfor %}
+  
 </urlset>
